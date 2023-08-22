@@ -31,70 +31,133 @@
       </div>
     </nav>
 
-    <!-- MAIN -->
+    <!-- ============MAIN============ -->
     <main>
       <div class="container">
-        <!-- LEFT -->
+        <!-- ============LEFT============ -->
         <div class="left">
-          <div class="side-container">
-            <a href="">
-              <img src="images/profile-1.jpg" class="profile-pic" />
-            </a>
-            <div class="links-container">
-              <a href="">Youssef Bassiem</a>
-              <a id="handle" href="">@Youssef</a>
+          <div class="profile">
+            <a href=""
+              ><img src="images/profile-1.jpg" class="profile-pic"
+            /></a>
+            <div class="handle">
+              <a href=""><h4>Youssef Bassiem</h4></a>
+              <a href="" class="text-muted"><p>@Youssef</p></a>
             </div>
           </div>
-
-          <aside>
-            <a href="">
+          <div class="sidebar">
+            <a href="" class="menu-item active">
               <i class="uli uil-home"></i>
               <h3>Home</h3>
             </a>
 
-            <a href="">
+            <a href="" class="menu-item">
               <i class="uli uil-compass"></i>
               <h3>Explore</h3>
             </a>
 
-            <a href="">
-              <i class="uli uil-bell"></i>
+            <a href="" class="menu-item" id="notification">
+              <i class="uli uil-bell"
+                ><small class="notification-count">9+</small></i
+              >
               <h3>Notification</h3>
-              <!-- POPUP -->
-            </a>
 
-            <a href="">
-              <i class="uli uil-envelope"></i>
+              <!-- ============POPUP============ -->
+              <div class="notifications">
+                <div class="notification-popup">
+                  <img src="images/profile-2.jpg" class="profile-pic" />
+                  <div class="nootificaion-text">
+                    <div>
+                      <b>Keke Benjamin</b>
+                      <span>accepted your friend request</span>
+                    </div>
+                    <small class="text-muted">2 Days ago</small>
+                  </div>
+                </div>
+
+                <div class="notification-popup">
+                  <img src="images/profile-3.jpg" class="profile-pic" />
+                  <div class="nootificaion-text">
+                    <b>Aylvar Menash</b>
+                    <span>commented on your post</span>
+                    <small class="text-muted">1 Hour ago</small>
+                  </div>
+                </div>
+
+                <div class="notification-popup">
+                  <img src="images/profile-4.jpg" class="profile-pic" />
+                  <div class="nootificaion-text">
+                    <b>Mary Oppong</b><span> and </span><b>283 others</b>
+                    <span>Liked your post</span>
+                    <small class="text-muted">4 Minutes ago</small>
+                  </div>
+                </div>
+
+                <div class="notification-popup">
+                  <img src="images/profile-5.jpg" class="profile-pic" />
+                  <div class="nootificaion-text">
+                    <b>Doris Y.Lartey</b>
+                    <span>commented on a post you're tagged in</span>
+                    <small class="text-muted">2 Days ago</small>
+                  </div>
+                </div>
+
+                <div class="notification-popup">
+                  <img src="images/profile-6.jpg" class="profile-pic" />
+                  <div class="nootificaion-text">
+                    <b>Donald Trump</b>
+                    <span>commented on your post</span>
+                    <small class="text-muted">1 Hour ago</small>
+                  </div>
+                </div>
+
+                <div class="notification-popup">
+                  <img src="images/profile-7.jpg" class="profile-pic" />
+                  <div class="nootificaion-text">
+                    <b>Jane Doe</b>
+                    <span>commented on your post</span>
+                    <small class="text-muted">1 Hour ago</small>
+                  </div>
+                </div>
+              </div>
+            </a>
+            <!-- ============END OF POPUP============ -->
+            <a href="" class="menu-item" id="msg-notification">
+              <i class="uli uil-envelope"
+                ><small class="notification-count">6</small></i
+              >
               <h3>Message</h3>
             </a>
 
-            <a href="">
+            <a href="" class="menu-item">
               <i class="uli uil-bookmark"></i>
               <h3>Bookmarks</h3>
             </a>
 
-            <a href="">
+            <a href="" class="menu-item">
               <i class="uli uil-chart-line"></i>
               <h3>Analytics</h3>
             </a>
 
-            <a href="">
+            <a href="" class="menu-item">
               <i class="uli uil-palette"></i>
               <h3>Theme</h3>
             </a>
 
-            <a href="">
+            <a href="" class="menu-item">
               <i class="uli uil-setting"></i>
               <h3>Settings</h3>
             </a>
-          </aside>
+          </div>
+          <!--============END OF SIDEBAR============ -->
+          <label for="create-post" class="btn btn-primary">Create Post</label>
         </div>
+        <!--============END OF LEFT============ -->
 
-        <!--MIDDLE -->
+        <!--============MIDDLE============ -->
         <div class="middle"></div>
 
-        <!-- RIGHT -->
-        <div class="right"></div>
+        <!-- ============RIGHT============ -->
       </div>
     </main>
   </body>
