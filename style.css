@@ -141,7 +141,17 @@ main>.container {
     top: var(--sticky-top-left);
     position: sticky;
 
-    height: max-content;
+    height: fit-content;
+}
+
+/* ============PROFILE============ */
+.handle {
+    display: flex;
+    flex-direction: column;
+}
+
+.handle a {
+    width: fit-content;
 }
 
 .profile {
@@ -170,7 +180,7 @@ main>.container {
 .menu-item {
     display: flex;
     column-gap: 1.5rem;
-    height: 4rem;
+    height: 3.7rem;
     transition: all 300ms ease;
 
     cursor: pointer;
@@ -281,7 +291,7 @@ i .notification-count {
     display: block;
 }
 
-/* ============MIDDLE============ */
+/* ============STORIES============ */
 
 .stories {
     display: flex;
@@ -350,6 +360,7 @@ i .notification-count {
     background: url(images/story-6.jpg) center center/cover no-repeat;
 }
 
+/* ============CREATE POST============ */
 .create-post {
     display: flex;
     justify-content: space-between;
@@ -370,4 +381,64 @@ i .notification-count {
     margin-right: 1rem;
 
     justify-self: start;
+}
+
+.feed {
+    font-size: 0.85rem;
+    line-height: 1.5;
+    margin-block: 1rem;
+    background-color: var(--color-white);
+    padding: var(--card-padding);
+    border-radius: var(--card-border-radius);
+
+}
+
+.head {
+    display: flex;
+    justify-content: space-between;
+
+    align-items: start;
+}
+
+.head .profile {
+    padding: 0;
+    background-color: transparent;
+
+    width: fit-content;
+}
+
+.pic-feed img {
+    margin-block: 0.7rem;
+    border-radius: var(--card-border-radius);
+}
+
+.pic-feed .buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.4rem;
+
+    margin: 0.6rem;
+}
+
+.liked-by {
+    display: flex;
+    align-items: center;
+}
+
+.liked-by > span {
+    overflow: hidden;
+    width: 1.4rem;
+    height: 1.4rem;
+    border-radius: 50%;
+    border: 2px solid var(--color-white);
+    margin-left: -0.6rem;
+}
+
+.liked-by  span:first-child{
+    margin: 0;
+}
+.liked-by p {
+    margin-left: 0.5rem;
+    display: inline;
 }
