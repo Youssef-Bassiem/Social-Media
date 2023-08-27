@@ -27,7 +27,7 @@
     --card-padding: 1rem;
 
     --sticky-top-left: 5.4rem;
-    --sticky-top-right: -18rem;
+    --sticky-top-right: -25rem;
 }
 
 body {
@@ -99,21 +99,21 @@ nav .container {
     align-items: center;
 }
 
-nav .search-bar {
+.search-bar {
     background-color: var(--color-light);
     border-radius: var(--border-radius);
     padding: var(--search-padding);
 }
 
-nav .search-bar input[type="search"] {
+.search-bar input[type="search"] {
     background-color: transparent;
-    width: 30%vw;
+    width: 30vw;
     margin-left: 1rem;
     font-size: 0.9rem;
     color: var(--color-dark);
 }
 
-nav .search-bar input[type="search"]::placeholder {
+.search-bar input[type="search"]::placeholder {
     color: var(--color-gray);
 }
 
@@ -172,7 +172,7 @@ main>.container {
 
 /* ============SIDEBAR============ */
 .sidebar {
-    margin-top: 1rem;
+    margin-top: 1.5rem;
     background-color: var(--color-white);
     border-radius: var(--border-radius);
 }
@@ -180,7 +180,7 @@ main>.container {
 .menu-item {
     display: flex;
     column-gap: 1.5rem;
-    height: 3.7rem;
+    height: 4.3rem;
     transition: all 300ms ease;
 
     cursor: pointer;
@@ -426,7 +426,7 @@ i .notification-count {
     align-items: center;
 }
 
-.liked-by > span {
+.liked-by>span {
     overflow: hidden;
     width: 1.4rem;
     height: 1.4rem;
@@ -435,10 +435,131 @@ i .notification-count {
     margin-left: -0.6rem;
 }
 
-.liked-by  span:first-child{
+.liked-by span:first-child {
     margin: 0;
 }
+
 .liked-by p {
     margin-left: 0.5rem;
     display: inline;
 }
+
+.right {
+    height: max-content;
+    position: sticky;
+    top: var(--sticky-top-right);
+
+    bottom: 0;
+}
+
+.messages {
+    background-color: var(--color-white);
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+}
+
+.messages i {
+    font-size: 1.4rem;
+}
+
+.heading {
+    margin-bottom: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    /* height: 3.5rem; */
+}
+
+/* ******* */
+.messages .search-bar {
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.category {
+    display: flex;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.category h6 {
+    font-size: 0.8rem;
+    width: 100%;
+    border-bottom: 4px var(--color-light) solid;
+    text-align: center;
+    padding-bottom: 0.5rem;
+}
+
+.category h6.active {
+    border-color: var(--color-dark);
+}
+
+.messages .profile {
+    position: relative;
+    gap: 1rem;
+
+    align-items: flex-start;
+    /* margin-bottom: 1rem; */
+}
+
+.messages .profile p {
+    font-size: 0.8rem;
+}
+
+.messages a {
+    position: relative;
+}
+
+.profile .active {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    bottom: 0;
+    border: 1px var(--color-white) solid;
+    right: 3px;
+    position: absolute;
+    background-color: var(--color-success);
+}
+.category h6:last-child{
+    color: var(--color-primary);
+}
+
+.requests h4{
+    color: var(--color-gray);
+    margin: 1rem 0;
+}
+.request {
+    border-radius: var(--card-border-radius);
+    padding: var(--card-padding);
+    background-color: var(--color-white);
+    display: flex;
+    width: fit-content;
+    height: fit-content;
+    margin-bottom: 0.7rem;
+    flex-direction: column;
+    width: 100%;
+}
+.request .actions {
+    margin-top: 1rem;
+    gap: 1rem;
+    display: flex;
+}
+
+/* .request button {
+    width: 50%;
+} */
+
+/* .category h6:nth-child(3)::before {
+    content: '';
+    margin-right: 1rem;
+
+    width: 40%;
+    margin-top: 2rem;
+    height: 3px;
+    bottom: 0;
+    position: absolute;
+    background-color: var(--color-light);
+} */
