@@ -523,14 +523,16 @@ i .notification-count {
     position: absolute;
     background-color: var(--color-success);
 }
-.category h6:last-child{
+
+.category h6:last-child {
     color: var(--color-primary);
 }
 
-.requests h4{
+.requests h4 {
     color: var(--color-gray);
     margin: 1rem 0;
 }
+
 .request {
     border-radius: var(--card-border-radius);
     padding: var(--card-padding);
@@ -542,24 +544,162 @@ i .notification-count {
     flex-direction: column;
     width: 100%;
 }
+
 .request .actions {
     margin-top: 1rem;
     gap: 1rem;
     display: flex;
 }
 
-/* .request button {
-    width: 50%;
-} */
+.customize-theme {
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    text-align: center;
+    display: grid;
+    place-content: center;
+    z-index: 3;
+    display: none;
+}
 
-/* .category h6:nth-child(3)::before {
-    content: '';
-    margin-right: 1rem;
+.customize-theme .card {
+    background-color: var(--color-white);
+    padding: 3rem;
+    border-radius: var(--card-border-radius);
+    width: 50vw;
+    height: 60vh;
+}
 
-    width: 40%;
-    margin-top: 2rem;
-    height: 3px;
-    bottom: 0;
-    position: absolute;
+.customize-theme .font-size {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+}
+
+.customize-theme .font-size>div {
+    display: flex;
+    align-items: center;
     background-color: var(--color-light);
-} */
+    border-radius: var(--card-border-radius);
+    padding: var(--search-padding);
+
+    justify-content: space-between;
+}
+
+.customize-theme .choose-font {
+    background-color: var(--color-secondary);
+    height: 0.3rem;
+    width: 100%;
+    margin-inline: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customize-theme .choose-font span {
+    width: 1rem;
+    height: 1rem;
+    background-color: var(--color-secondary);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.customize-theme .choose-font span.active {
+    background-color: var(--color-primary);
+}
+
+.customize-theme h4 {
+    text-align: left;
+}
+
+.customize-theme .choose-color {
+    background-color: var(--color-light);
+    padding: var(--search-padding);
+    border-radius: var(--card-border-radius);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.customize-theme .choose-color span {
+    width: 2.2rem;
+    height: 2.2rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.customize-theme .choose-color span:nth-child(1) {
+    background-color: hsl(252, 75%, 60%);
+}
+
+.customize-theme .choose-color span:nth-child(2) {
+    background-color: hsl(52, 75%, 60%);
+}
+
+.customize-theme .choose-color span:nth-child(3) {
+    background-color: hsl(352, 75%, 60%);
+}
+
+.customize-theme .choose-color span:nth-child(4) {
+    background-color: hsl(152, 75%, 60%);
+}
+
+.customize-theme .choose-color span:nth-child(5) {
+    background-color: hsl(202, 75%, 60%);
+}
+
+.customize-theme .choose-color span.active {
+    border: 5px solid white;
+}
+
+.customize-theme .color {
+    margin-bottom: 2rem;
+}
+
+.choose-bg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 1.5rem;
+}
+
+.choose-bg>div {
+    padding: var(--card-padding);
+    display: flex;
+    align-items: center;
+    width: 100%;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 0.4rem;
+    cursor: pointer;
+}
+
+.choose-bg>div.active {
+    border: 2px solid var(--color-primary);
+}
+
+.choose-bg .bg-1 {
+    background-color: white;
+    color: black;
+}
+
+.choose-bg .bg-2 {
+    background-color: hsl(252, 30%, 17%);
+    color: white;
+}
+
+.choose-bg .bg-3 {
+    background-color: hsl(252, 30%, 10%);
+    color: white;
+}
+
+.choose-bg span {
+    height: 2rem;
+    width: 2rem;
+    border: 2px solid var(--color-gray);
+    border-radius: 50%;
+    margin-right: 1rem;
+}
