@@ -98,15 +98,15 @@ fontSizes.forEach((font) => {
       root.style.setProperty("--sticky-top-left", "5.4rem");
       root.style.setProperty("--sticky-top-right", "-7rem");
     } else if (font.classList.contains("font-size-3")) {
-      fontSize = "14px";
+      fontSize = "13px";
       root.style.setProperty("--sticky-top-left", "-2rem");
       root.style.setProperty("--sticky-top-right", "-17rem");
     } else if (font.classList.contains("font-size-4")) {
-      fontSize = "17px";
+      fontSize = "15px";
       root.style.setProperty("--sticky-top-left", "-5rem");
       root.style.setProperty("--sticky-top-right", "-25rem");
     } else if (font.classList.contains("font-size-5")) {
-      fontSize = "20px";
+      fontSize = "18px";
       root.style.setProperty("--sticky-top-left", "-12rem");
       root.style.setProperty("--sticky-top-right", "-35rem");
     }
