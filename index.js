@@ -90,23 +90,23 @@ fontSizes.forEach((font) => {
     font.classList.add("active");
     let fontSize;
     if (font.classList.contains("font-size-1")) {
-      fontSize = "10px";
+      fontSize = "9px";
       root.style.setProperty("--sticky-top-left", "5.4rem");
       root.style.setProperty("--sticky-top-right", "5.4rem");
     } else if (font.classList.contains("font-size-2")) {
-      fontSize = "13px";
+      fontSize = "11px";
       root.style.setProperty("--sticky-top-left", "5.4rem");
       root.style.setProperty("--sticky-top-right", "-7rem");
     } else if (font.classList.contains("font-size-3")) {
-      fontSize = "16px";
+      fontSize = "14px";
       root.style.setProperty("--sticky-top-left", "-2rem");
       root.style.setProperty("--sticky-top-right", "-17rem");
     } else if (font.classList.contains("font-size-4")) {
-      fontSize = "19px";
+      fontSize = "17px";
       root.style.setProperty("--sticky-top-left", "-5rem");
       root.style.setProperty("--sticky-top-right", "-25rem");
     } else if (font.classList.contains("font-size-5")) {
-      fontSize = "22px";
+      fontSize = "20px";
       root.style.setProperty("--sticky-top-left", "-12rem");
       root.style.setProperty("--sticky-top-right", "-35rem");
     }
