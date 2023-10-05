@@ -818,6 +818,7 @@ i .notification-count {
     }
 
     .mobile-nav .menu-item i {
+        font-size: 28px;
         width: 100%;
         margin-left: 0.4rem;
     }
@@ -852,16 +853,10 @@ i .notification-count {
     }
 
     i .notification-count {
-        right: 0.9rem;
+        right: 30%;
     }
 
     .choose-bg {
         flex-wrap: wrap;
-    }
-}
-
-@media (max-width:555px) {
-    i .notification-count {
-        right: 0.4rem;
     }
 }
