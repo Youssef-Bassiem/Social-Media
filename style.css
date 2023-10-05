@@ -43,6 +43,10 @@ body {
     overflow-x: scroll;
 }
 
+html {
+    font-size: 13px;
+}
+
 /* ============GENERAL STYLES============ */
 .container {
     width: 80%;
